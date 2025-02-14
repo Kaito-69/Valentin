@@ -48,7 +48,6 @@
             transform: scale(1.1);
         }
 
-        /* Floating Hearts Animation */
         .heart {
             position: absolute;
             width: 20px;
@@ -72,62 +71,30 @@
             }
         }
 
-        /* Add Images to the Sides */
-        .image-container {
-            position: absolute;
-            width: 100%;
-            height: auto;
-        }
-
-        .left-image, .right-image {
-            position: absolute;
-            width: 250px; /* Adjust image size */
-            height: auto;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .left-image {
-            left: 5%;
-        }
-
-        .right-image {
-            right: 5%;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
+        /* Responsive Design */
+        @media (max-width: 768px) {
             h1 {
-                font-size: 2.5em;
+                font-size: 2.2em;
             }
 
             p {
                 font-size: 1.2em;
+                max-width: 90%;
             }
 
-            .left-image, .right-image {
-                width: 150px; /* Reduce image size for smaller screens */
+            .btn {
+                font-size: 1em;
+                padding: 12px 25px;
             }
         }
     </style>
 </head>
-<audio autoplay loop>
-    <source src="C:\Users\Byamb\Downloads\val\aaa.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-</audio>
 <body>
-
-    <div class="image-container">
-        <img src="1.jpg" class="left-image">
-        <img src="2.jpg" class="right-image">
-    </div>
-
     <h1>Happy Valentine's Day❤️</h1>
     <p>Хайр нь чамайг чиний мэддэгээс ч илүү хайрладаг шүү ❤️ . Өнөөдрийг хамтдаа аз жаргалтай, дурсамжтай өнгөрүүлцгээе ! 💕</p>
     <button class="btn" onclick="showLove()">Surprise 💝</button>
 
     <script>
-        // Show floating hearts
         function createHeart() {
             const heart = document.createElement('div');
             heart.classList.add('heart');
@@ -141,12 +108,10 @@
         
         setInterval(createHeart, 200);
 
-        // Show alert and redirect
         function showLove() {
             alert("Үнэхээр үзэсгэлэнтэй шүү миний хайр ❤️");
-            window.location.href = "surprise.html"; // Redirect to second page
+            window.location.href = "surprise.html";
         }
     </script>
-
 </body>
 </html>
