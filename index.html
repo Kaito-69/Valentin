@@ -19,6 +19,29 @@
             text-align: center;
         }
 
+        /* Add Images to the Sides */
+         .image-container {
+            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+
+        .left-image, .right-image {
+            position: absolute;
+            width: 250px; /* Adjust image size */
+            height: auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .left-image {
+            left: 5%;
+        }
+
+        .right-image {
+            right: 5%;
+        }
+
         h1 {
             color: #ff3366;
             font-size: 3em;
@@ -93,7 +116,10 @@
     <h1>Happy Valentine's Day❤️</h1>
     <p>Хайр нь чамайг чиний мэддэгээс ч илүү хайрладаг шүү ❤️ . Өнөөдрийг хамтдаа аз жаргалтай, дурсамжтай өнгөрүүлцгээе ! 💕</p>
     <button class="btn" onclick="showLove()">Surprise 💝</button>
-
+ <div class="image-container">
+        <img src="3.jpg" class="left-image">
+        <img src="4.jpg" class="right-image">
+    </div>
     <script>
         function createHeart() {
             const heart = document.createElement('div');
