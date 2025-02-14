@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise 💖</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        img {
+            width: 60%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 20px;
+            font-weight: bold;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #ff4b5c;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background: #ff1e40;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💕 Миний хайр хамгийн хөөрхөн нь жүү 💕</h1>
+
+    <!-- Add a beautiful romantic image -->
+    <img src="5.jpeg" alt="">
+
+    <p>19:00 цагаас хамтдаа кино үзэх боллоо💖</p>
+
+    <a href="index.html" class="back-button">Go Back</a>
+
+</body>
+</html>
